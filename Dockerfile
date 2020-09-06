@@ -26,6 +26,5 @@ COPY ./Gemfile.lock $APP_ROOT/Gemfile.lock
 
 
 # 上でコピーしたGemfileに従ってGemをインストール
-# RUN gem install bundler && bundle install
 RUN bundle install
 ADD . $APP_ROOT
